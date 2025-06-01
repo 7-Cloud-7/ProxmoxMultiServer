@@ -1,9 +1,7 @@
 # ProxmoxMultiServer  
 Proxmox system running Web Server, VPN, and AD (includes DNS, Database, Kubernetes + Docker)
 
-## Proxmox + Kubernetes + Docker Infrastructure Project for Web Server
-
-### Description
+## Description
 
 This project aims to deploy a complete infrastructure on Proxmox VE to manage a critical service environment, including:
 
