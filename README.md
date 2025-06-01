@@ -29,7 +29,6 @@ Physical Hardware (Dedicated PC or Server)
 ├── VPN Server VM (OpenVPN or WireGuard)
 └── Active Directory VM (Windows Server)
 
-### Architecture
 
 
 ---
