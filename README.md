@@ -55,11 +55,10 @@ The infrastructure allows the website to be accessible both from within the priv
 1. **Install Proxmox VE** on physical hardware  
 2. **Create an Ubuntu VM** to host Docker and Kubernetes  
 3. **Run the automation script** to install and configure Docker and Kubernetes  
-4. **Deploy YAML files** for Apache, MariaDB, and Bind9 services on Kubernetes  
-5. **Create a VPN Server VM** and configure it (OpenVPN or WireGuard)  
-6. **Create an Active Directory VM** and configure it to manage users and permissions  
-7. **Configure network, firewall, and external access** to expose the web and secure the VPN  
-8. **Validate access to services and communication between VMs**
+4. **Deploy YAML files** (or automate them) for Apache, MariaDB, and Bind9 services on Kubernetes  
+5. **Create VPN Server + Active Directory VMs**
+6. **Configure network, firewall, and external access** to expose the web and secure the VPN  
+7. **Validate access to services and communication between VMs**
 
 ---
 
