@@ -1,104 +1,105 @@
-# ProxmoxMultiServer
-Proxmox system running Web Server, VPN and AD (includes DNS, BBDD, Kubernetes+Docker)
+# ProxmoxMultiServer  
+Proxmox system running Web Server, VPN, and AD (includes DNS, Database, Kubernetes + Docker)
 
-# Proyecto Infraestructura Proxmox + Kubernetes + Docker para Servidor Web
+## Proxmox + Kubernetes + Docker Infrastructure Project for Web Server
 
-## Descripción
+### Description
 
-Este proyecto tiene como objetivo desplegar una infraestructura completa sobre Proxmox VE para gestionar un entorno de servicios críticos, incluyendo:
+This project aims to deploy a complete infrastructure on Proxmox VE to manage a critical service environment, including:
 
-- Servidor web Apache
-- Base de datos MariaDB
-- Servidor DNS Bind9
-- Servidor VPN para acceso seguro
-- Servidor Active Directory para gestión de usuarios y permisos
-- Orquestación y gestión de contenedores con Kubernetes para alta disponibilidad, balanceo de carga, auto-reinicio y backups automáticos.
+- Apache Web Server  
+- MariaDB Database  
+- Bind9 DNS Server  
+- VPN Server for secure access  
+- Active Directory Server for user and permission management  
+- Container orchestration and management with Kubernetes for high availability, load balancing, auto-restart, and automatic backups.
 
-La infraestructura permite que la página web sea accesible tanto desde dentro de la red privada (a través de VPN y Active Directory) como desde el exterior.
+The infrastructure allows the website to be accessible both from within the private network (via VPN and Active Directory) and from the outside.
 
 ---
 
-## Arquitectura
+### Architecture
 
-Hardware físico (Servidor o PC dedicado)
+Physical Hardware (Dedicated PC or Server)
 └── Proxmox VE
-├── VM Ubuntu (Docker + Kubernetes)
-│ ├── Contenedor Apache (Servidor Web)
-│ ├── Contenedor MariaDB (Base de Datos)
-│ └── Contenedor Bind9 (Servidor DNS)
-├── VM Servidor VPN (OpenVPN o WireGuard)
-└── VM Active Directory (Windows Server)
+├── Ubuntu VM (Docker + Kubernetes)
+│ ├── Apache Container (Web Server)
+│ ├── MariaDB Container (Database)
+│ └── Bind9 Container (DNS Server)
+├── VPN Server VM (OpenVPN or WireGuard)
+└── Active Directory VM (Windows Server)
+
+### Architecture
 
 
 ---
 
-## Funcionalidades
+### Features
 
-- Instalación automatizada de Docker y Kubernetes.
-- Despliegue de servicios en contenedores gestionados por Kubernetes.
-- Red privada segura mediante VPN.
-- Control de acceso y permisos con Active Directory.
-- DNS configurado para resolución interna y externa.
-- Alta disponibilidad y balanceo de carga para servicios críticos.
-- Scripts de automatización para facilitar la instalación y despliegue.
-
----
-
-## Requisitos
-
-- Hardware con capacidad para virtualización.
-- Proxmox VE instalado en el hardware físico.
-- Conocimientos básicos de Linux, Docker, Kubernetes y administración de redes.
+- Automated installation of Docker and Kubernetes  
+- Deployment of services in Kubernetes-managed containers  
+- Secure private network via VPN  
+- Access control and permission management with Active Directory  
+- DNS configured for both internal and external resolution  
+- High availability and load balancing for critical services  
+- Automation scripts to simplify installation and deployment
 
 ---
 
-## Guía rápida de instalación
+### Requirements
 
-1. **Instalar Proxmox VE** en el hardware físico.
-2. **Crear una VM Ubuntu** para alojar Docker y Kubernetes.
-3. **Ejecutar script de automatización** para instalar y configurar Docker y Kubernetes.
-4. **Desplegar los archivos YAML** para servicios Apache, MariaDB y Bind9 en Kubernetes.
-5. **Crear VM para servidor VPN** y configurarla (OpenVPN o WireGuard).
-6. **Crear VM para Active Directory** y configurarla para gestionar usuarios y permisos.
-7. **Configurar redes, firewall y accesos externos** para exponer la web y asegurar la VPN.
-8. **Validar el acceso a los servicios y la comunicación entre VMs**.
+- Hardware with virtualization support  
+- Proxmox VE installed on physical hardware  
+- Basic knowledge of Linux, Docker, Kubernetes, and network administration
 
 ---
 
-## Scripts y configuraciones
+### Quick Installation Guide
 
-- `install_docker_kubernetes.sh` : Script para instalar Docker y Kubernetes en Ubuntu.
-- `deploy_services.yaml` : Archivo YAML para desplegar Apache, MariaDB y Bind9 en Kubernetes.
-- Scripts de configuración para VPN y Active Directory (en desarrollo).
-
----
-
-## Futuras mejoras
-
-- Integración con herramientas de monitoreo (Prometheus, Grafana).
-- Automatización completa del despliegue de todas las VMs.
-- Implementación de backups automatizados.
-- Configuración avanzada de balanceo de carga y escalabilidad.
+1. **Install Proxmox VE** on physical hardware  
+2. **Create an Ubuntu VM** to host Docker and Kubernetes  
+3. **Run the automation script** to install and configure Docker and Kubernetes  
+4. **Deploy YAML files** for Apache, MariaDB, and Bind9 services on Kubernetes  
+5. **Create a VPN Server VM** and configure it (OpenVPN or WireGuard)  
+6. **Create an Active Directory VM** and configure it to manage users and permissions  
+7. **Configure network, firewall, and external access** to expose the web and secure the VPN  
+8. **Validate access to services and communication between VMs**
 
 ---
 
-## Contribuciones
+### Scripts and Configurations
 
-Se aceptan contribuciones para mejorar la automatización, añadir nuevas funcionalidades o mejorar la documentación. Por favor abre un Issue o Pull Request.
-
----
-
-## Licencia
-
-Este proyecto está bajo licencia MIT. Consulta el archivo LICENSE para más detalles.
+- `install_docker_kubernetes.sh`: Script to install Docker and Kubernetes on Ubuntu  
+- `deploy_services.yaml`: YAML file to deploy Apache, MariaDB, and Bind9 on Kubernetes  
+- VPN and Active Directory configuration scripts (in development)
 
 ---
 
-## Contacto
+### Future Improvements
 
-Para dudas o consultas contacta con [tu-email@dominio.com].
+- Integration with monitoring tools (Prometheus, Grafana)  
+- Full automation of all VM deployments  
+- Implementation of automated backups  
+- Advanced configuration of load balancing and scalability
 
 ---
 
-¡Gracias por usar este proyecto!
+### Contributions
 
+Contributions are welcome to improve automation, add new features, or enhance documentation. Please open an Issue or Pull Request.
+
+---
+
+### License
+
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+### Contact
+
+For questions or inquiries, contact: cloud71234567@gmail.com
+
+---
+
+**Thank you for using this project!**
