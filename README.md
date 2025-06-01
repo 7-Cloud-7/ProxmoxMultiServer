@@ -20,14 +20,14 @@ The infrastructure allows the website to be accessible both from within the priv
 
 ### Architecture
 
-<pre>```Physical Hardware (Dedicated PC or Server)
+<pre>Physical Hardware (Dedicated PC or Server)
 └── Proxmox VE
 ├── Ubuntu VM (Docker + Kubernetes)
 │ ├── Apache Container (Web Server)
 │ ├── MariaDB Container (Database)
 │ └── Bind9 Container (DNS Server)
 ├── VPN Server VM (OpenVPN or WireGuard)
-└── Active Directory VM (Windows Server)```</pre>
+└── Active Directory VM (Windows Server)</pre>
 
 
 
