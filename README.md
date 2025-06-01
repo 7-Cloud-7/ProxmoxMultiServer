@@ -34,8 +34,6 @@ Physical Hardware (Server or PC)
     └── VM: Windows Server (AD + DNS)
          ├── Active Directory DS
          └── DNS Server (integrado)
-
-
 </pre>
 
 
