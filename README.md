@@ -18,13 +18,22 @@ The infrastructure allows the website to be accessible both from within the priv
 
 ### Architecture
 
-<pre>Physical Hardware (Dedicated PC or Server)
+<pre>
+Physical Hardware (Dedicated PC or Server)
 └── Proxmox VE
     ├── Ubuntu VM (Docker + Kubernetes)
     │    ├── Apache Container (Web Server)
     │    ├── MariaDB Container (Database)
     │    └── Bind9 Container (DNS Server)
-    └── Active Directory+VPN Server VM</pre>
+    └── Active Directory+VPN Server VM
+    ├──/etc/ansible/
+        ├── hosts             # Inventario de tus máquinas
+        └── playbooks/
+            ├── docker.yml    # Playbook para instalar Docker
+            ├── apache.yml    # Playbook para desplegar contenedor Apache
+            └── mariadb.yml   # Playbook para MariaDB, etc.
+</pre>
+
 
 ---
 
