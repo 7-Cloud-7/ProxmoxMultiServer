@@ -36,7 +36,7 @@ Physical Hardware (Server or PC)
          └── DNS Server (integrado)
 </pre>
 
-After reviewing the architecture you may (or may not) be wondering... Why are you going for Windows AD? Shor answer is Windows AD is pretty really easy to configure.
+After reviewing the architecture you may (or may not) be wondering... Why are you going for Windows AD? Short answer is Windows AD is pretty really easy to configure.  
 Long answer is... More compatible with future Windows Clients, prebuilt GPOs, official support from Microsoft.
 Small projects will prefer Linux AD because its free but big companies have lots of Windows Clients so better get used to Windows Server
 
