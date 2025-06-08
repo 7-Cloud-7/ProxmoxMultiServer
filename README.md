@@ -36,13 +36,25 @@ Physical Hardware (Server or PC)
          └── DNS Server (integrado)
 </pre>
 
-After reviewing the architecture you may (or may not) be wondering... Why are you going for `Windows AD?`
+> After reviewing the architecture, you may (or may not) be wondering...  
+> **Why choose Windows AD?**
+>
+> **Short answer:**  
+> It's simply *easy to configure*.
+>
+> **The longer answer:**  
+> For small or lightweight projects, **Linux AD** (Samba) is often preferred — it’s *free*, uses *less memory*, and hey... some of us just like Linux better.
+>
+> However, **Windows AD** offers clear advantages:
+>
+> - Seamless **compatibility** with Windows clients  
+> - Prebuilt **Group Policies (GPOs)** ready to use  
+> - **Official support** from Microsoft  
+> - And sometimes... I just want to use a **GUI**
+>
+> In bigger companies Windows is the main character so just get used to it as I did while working.  
+>
 
-Short answer is Windows AD is really **easy to configure**, now long answer...  
-
-Small projects will prefer Linux AD because its **free**, **less RAM needed** and Linux is just better than Windows.
-Nevertheless Windows AD is **more compatible** with future Windows Clients, **prebuilt GPOs**, **official support** from Microsoft and sometimes **I just want to use GUI**.
-Big companies have lots of Windows Clients so better get used to Windows Server as I did while working.
 
 ---
 
